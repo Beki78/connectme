@@ -1,8 +1,11 @@
+import React from "react";
 import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
 } from "@heroicons/react/20/solid";
+import Lottie from "lottie-react";
+import animationData from "../assets/Animation - 1724399056292.json"; 
 
 const features = [
   {
@@ -27,25 +30,25 @@ const features = [
 
 export default function Feature() {
   return (
-    <div className="overflow-hidden bg-[#f8f6f6] py-24 sm:py-32">
+    <div className="overflow-hidden bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <p className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <p className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Our features
               </p>
-              <p className="mt-3 text-lg leading-8 text-gray-600">
+              <p className="mt-3 text-lg leading-8 text-white">
                 Enhance your social media presence with ease. Our platform
                 offers a centralized place to showcase all your social media
                 profiles, serving as a comprehensive portfolio. Track your
                 profile's performance with analytics, seeing how many visitors
                 come to your page.
               </p>
-              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-slate-300 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
+                    <dt className="inline font-bold text-white">
                       <feature.icon
                         aria-hidden="true"
                         className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
@@ -58,11 +61,10 @@ export default function Feature() {
               </dl>
             </div>
           </div>
-          <img
-            alt="Product screenshot"
-            src="https://images.unsplash.com/photo-1603145733146-ae562a55031e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        
-            className="w-[48rem] h-[36rem] object-cover max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+          <Lottie
+            animationData={animationData}
+            loop={true}
+            className="w-[48rem] h-[32rem] object-contain "
           />
         </div>
       </div>
