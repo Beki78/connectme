@@ -1,26 +1,52 @@
 import React from "react";
+import { Link } from "react-scroll";
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="flex flex-col space-y-3 justify-center m-3">
-      <nav className="flex justify-center flex-wrap gap-9 text-gray-500 font-medium">
-        <a className="hover:text-gray-900" href="#">
+    <footer className="w-full py-4 bg-gray-800 text-white">
+      <div className="flex justify-center space-x-4">
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          
+          className="cursor-pointer"
+        >
           Home
-        </a>
-        <a className="hover:text-gray-900" href="#">
-          Feature
-        </a>
-        <a className="hover:text-gray-900" href="#">
+        </Link>
+        <Link
+          to="features"
+          smooth={true}
+          duration={500}
+          
+          className="cursor-pointer"
+        >
+          Features
+        </Link>
+        <Link
+          to="pricing"
+          smooth={true}
+          duration={500}
+          
+          className="cursor-pointer"
+        >
           Pricing
-        </a>
-        <a className="hover:text-gray-900" href="#">
+        </Link>
+        <Link
+          to="contact"
+          smooth={true}
+          duration={500}
+          
+          className="cursor-pointer"
+        >
           Contact
-        </a>
-      </nav>
-
-      <p className="text-center text-gray-700 font-medium">
-        &copy; 2024 ConnectMe. All rights reserved.
+        </Link>
+      </div>
+      <p className="text-center mt-4">
+        &copy; 2024 Your Company. All rights reserved.
       </p>
     </footer>
   );
-}
+};
+
+export default Footer;

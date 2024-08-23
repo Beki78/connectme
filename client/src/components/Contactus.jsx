@@ -5,17 +5,23 @@ const Contactus = () => {
     <section className="body-font relative bg-gray-900 text-gray-400">
       <div className="container mx-auto px-5 pt-10 pb-3">
         <div className="mb-12 flex w-full flex-col text-center">
-          <h1 className="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">
+          <h1
+            className="title-font mb-4 text-2xl font-medium text-white sm:text-3xl"
+            data-aos="fade-down"
+          >
             Contact Us
           </h1>
-          <p className="mx-auto text-base leading-relaxed lg:w-2/3">
+          <p
+            className="mx-auto text-base leading-relaxed lg:w-2/3"
+            data-aos="fade-down"
+          >
             Feel free to reach out to us! Whether you have a question or
             feedback, we'd love to hear from you.
           </p>
         </div>
         <div className="mx-auto md:w-2/3 lg:w-1/2">
           <div className="-m-2 flex flex-wrap">
-            <div className="w-1/2 p-2">
+            <div className="w-1/2 p-2" data-aos="fade-right">
               <div className="relative">
                 <input
                   type="text"
@@ -32,7 +38,7 @@ const Contactus = () => {
                 </label>
               </div>
             </div>
-            <div className="w-1/2 p-2">
+            <div className="w-1/2 p-2" data-aos="fade-left">
               <div className="relative">
                 <input
                   type="email"
@@ -49,7 +55,7 @@ const Contactus = () => {
                 </label>
               </div>
             </div>
-            <div className="mt-4 w-full p-2">
+            <div className="mt-4 w-full p-2" data-aos="fade-up">
               <div className="relative">
                 <textarea
                   id="message"
@@ -65,8 +71,8 @@ const Contactus = () => {
                 </label>
               </div>
             </div>
-            <div className="w-full p-2">
-              <button className="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none">
+            <div className="w-full p-2" data-aos="zoom-in">
+              <button className="mx-auto flex rounded border-0 bg-violet-500 py-2 px-8 text-lg text-white hover:bg-violet-600 focus:outline-none">
                 Send Message
               </button>
             </div>
@@ -75,7 +81,6 @@ const Contactus = () => {
                 bakiget@gmail.com
               </a>
               <p className="my-5 leading-normal">Addis Ababa, Ethiopia</p>
-              
             </div>
           </div>
         </div>
