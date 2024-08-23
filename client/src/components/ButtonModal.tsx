@@ -7,6 +7,13 @@ import {
   ModalFooter,
   ModalTrigger,
 } from "../components/ui/animated-modal";
+import {
+  LinkIcon,
+  ChartBarIcon,
+  EyeIcon,
+  FolderArrowDownIcon,
+  FolderIcon
+} from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
 
 export function AnimatedModalDemo() {
@@ -32,7 +39,7 @@ export function AnimatedModalDemo() {
         </div>
         <ModalBody>
           <ModalContent>
-            <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8">
+            <h4 className="md:text-lg text-2xl  text-neutral-600 dark:text-neutral-100 font-bold text-center lg:mb-8">
               Continue{" "}
               <span className="px-1 py-0.5 rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200">
                 Connecting
@@ -70,25 +77,25 @@ export function AnimatedModalDemo() {
             </div>
             <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
               <div className="flex  items-center justify-center">
-                <PlaneIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                <LinkIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
                   Link all social medias
                 </span>
               </div>
               <div className="flex items-center justify-center">
-                <ElevatorIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                <EyeIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
                   Keep revealed
                 </span>
               </div>
               <div className="flex items-center justify-center">
-                <VacationIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                <ChartBarIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
                   See your analytics
                 </span>
               </div>
               <div className="flex  items-center justify-center">
-                <FoodIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                <FolderIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
                   Keep organized
                 </span>

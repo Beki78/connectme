@@ -14,16 +14,14 @@ const Pricing = () => {
       ],
     },
     {
-      title: "Pro",
+      title: "Premium",
       description: "",
       price: "50ETB",
       duration: "/month",
       features: [
         "Add unlimited social media accounts",
-        "Advanced analytics and insights",
-        "Team size: Up to 10 users",
-        "Customer support",
-        "Free updates",
+        "Analytics and insights",
+        "Multiple theme",
       ],
     },
   ];
@@ -46,7 +44,7 @@ const Pricing = () => {
             Simple, transparent pricing for your personalize needs.
           </p>
         </div>
-        <div className="space-y-8 lg:grid lg:grid-cols-2  lg:space-y-0">
+        <div className="space-y-8 lg:grid lg:grid-cols-2  lg:space-y-1">
           {plans.map((plan, index) => (
             <div
               key={index}

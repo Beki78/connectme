@@ -32,11 +32,8 @@ export default function Feature() {
   return (
     <div className="overflow-hidden bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div
-            className="lg:pr-8 lg:pt-4"
-            data-aos="fade-right" // Add AOS attribute for animation
-          >
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+          <div className="lg:w-1/2 lg:pr-8 lg:pt-4" data-aos="fade-right">
             <div className="lg:max-w-lg">
               <p className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Our features
@@ -53,7 +50,7 @@ export default function Feature() {
                   <div
                     key={feature.name}
                     className="relative pl-9"
-                    data-aos="fade-up" // Add AOS attribute for animation
+                    data-aos="fade-up"
                   >
                     <dt className="inline font-bold text-white">
                       <feature.icon
@@ -68,12 +65,16 @@ export default function Feature() {
               </dl>
             </div>
           </div>
-          <Lottie
-            animationData={animationData}
-            loop={true}
-            className="w-[48rem] h-[32rem] object-contain"
-            data-aos="fade-left" // Add AOS attribute for animation
-          />
+          <div
+            className="flex justify-center lg:w-1/2 lg:pl-8"
+            data-aos="fade-left"
+          >
+            <Lottie
+              animationData={animationData}
+              loop={true}
+              className="w-full max-w-md h-auto"
+            />
+          </div>
         </div>
       </div>
     </div>
