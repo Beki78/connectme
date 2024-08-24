@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@clerk/clerk-react": "^5.4.2",
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.5",
     "@tabler/icons-react": "^3.12.0",
+    "aos": "^2.3.4",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.29",
     "headlessui": "^0.0.0",

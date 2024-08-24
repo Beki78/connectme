@@ -14,6 +14,7 @@ import {
   FolderArrowDownIcon,
   FolderIcon
 } from "@heroicons/react/20/solid";
+import { useSignUp } from "@clerk/clerk-react";
 import { motion } from "framer-motion";
 
 export function AnimatedModalDemo() {
