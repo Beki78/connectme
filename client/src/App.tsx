@@ -56,16 +56,18 @@
 
 // export default App;
 // src/App.tsx
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home'; // Import your other pages
-import Step from './pages/Step'; // Import your Step page
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home"; // Import your other pages
+import Step from "./pages/Step"; // Import your Step page
+import { SidebarDemo } from "./pages/Admin";
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/step" element={<Step />} /> {/* Add the new route here */}
+      <Route path="/step" element={<Step />} />
+      <Route path="/admin" element={<SidebarDemo />} />
     </Routes>
   );
 };
