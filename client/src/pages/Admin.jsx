@@ -12,6 +12,8 @@ import DonutChart from "../components/DonutChart";
 import ViewsCount from "../components/ViewsCount";
 import Profile from "../components/Profile";
 import MySociaMedia from "../components/MySociaMedia";
+import Settings from "../components/Setting"
+import Logout from "../components/Logout";
 
 export function SidebarDemo() {
   const [activeComponent, setActiveComponent] = useState("Dashboard");
@@ -217,21 +219,22 @@ const UserProfile = () => {
   );
 };
 
-const Settings = () => {
+const Setting = () => {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold">Settings</h1>
       <p>Here you can update your settings.</p>
-      {/* Add your settings form here */}
+      <Settings/>
     </div>
   );
 };
 
-const Logout = () => {
+const Logouts = () => {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold">Logout</h1>
       <p>You have been logged out.</p>
+      <Logout/>
       {/* Handle logout functionality here */}
     </div>
   );
@@ -256,6 +259,7 @@ export const LogoIcon = () => {
   return (
     <div className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20">
       <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
+      
     </div>
   );
 };
